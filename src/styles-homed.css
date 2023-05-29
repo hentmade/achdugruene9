@@ -1359,11 +1359,6 @@ h1{
 }
 
 @media only screen and (max-width: 768px) {
-
-  body {
-    background: #F9FBF9;
-    font-family: Candara;
-  }
   
   .logoImNav {
     float: right;
