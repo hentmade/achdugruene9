@@ -1,0 +1,106 @@
+2 Modelle: flex + grid
+
+inneres Element (inside) innerhalb section (1.2)
+inside hat max-width, zB 600px (1.3)
+inside hat margin: 0 auto; (rechts links automatisch, dadurch zentriert) (1.3)
+sections padding-left/-right auf 0 setzen (1.3)
+
+CSS-Variablen für Farben etc.: --hauptfarbe: ...;  Benutzung: var(--hauptfarbe) (1.5)
+
+inline-Boxen (display: inline): werden so breit wie Inhalt, stehen nebeneinander so lange möglich (3.1)
+block-Boxen (display: block): werden so breit wie möglich u. blockieren ganze Zeile (3.1)
+--> Flow mit position und float festlegen (veraltet!!)
+
+position: (3)
+	relative: Bezugspunkt ist urspüngliche Position im flow (also zB max-width: 25%)
+	absolute: Bezugspunkt ist Stammelement html oder umgebendes Element wenn dieses relative
+	fixed:	  wie absolute, aber scrollt nicht mit
+	sticky:   scrollt mit und bleibt an bestimmter Stelle stehen
+
+z-index: Reihenfolge von positionierten Boxen übereinander (je höher desto weiter vorne) (3.8)
+
+float: Text neben Bild (4)
+
+display: flex --> macht aus umgebendem Element Flex-Container (nach außen block-Box, nach innen flex-Box) (5)
+	Flex-Items stehen nebeneinander
+	max-/min-width wird weitesgehend vermieden
+
+	Fließrichtung (5.4)
+	flex-direction: row (Hauptachse links->rechts), column (Querachse oben->unten)
+	flex-wrap: wrap --> Zeilenumbruch
+
+	Ausrichtung (5.5)
+	an Hauptachse: justify-content: wird umgebendem Element zugewiesen (flex-start/flex-end/space-between/...)
+	an Querachse:  align-items: wird umgebendem Element zugewiesen (stretch/flex-start/flex-end/...)
+
+	automatische Abstände mit margin: auto --> zB um 1 Element ganz nach rechts zu setzen (5.6)
+	margin: auto --> zentriert Element auf Bildschirm
+
+	Flexibilität (5.7)
+	flex: 1 --> wird flex-items zugewiesen --> alle items gleich groß
+
+	Reihenfolge u. Zwischenräume (5.9)
+	gap: --> für Zwischenräume
+
+"Burger"-Menü-Button auf Handy (6)
+
+display: grid (7)
+
+	@supports für mehr Breite bei modernen Browsern (7.2)
+
+	ähnliche Container-Item-Beziehung wie bei flex (7.3)
+	grid lines sind nummeriert
+	grid tracks --> Platz zwischen zwei Linien
+	grid row/column --> Zeile od. Spalte gestalten
+	grid gap --> Platz zwischen tracks ("Dicke der Zwischenräume")
+
+	responsive ohne media-query (7.9)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	

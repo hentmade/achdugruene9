@@ -3,204 +3,272 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>AchDuGrueneNeune</title>
+    <title>Ach du grüne Neune! Festival</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="src/styles-homed.css" />
+
+    <link rel="stylesheet" href="src/layout_neu.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/ico" sizes="144x144" href="img/favicon_package_v0.16/google.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon_package_v0.16/safari-pinned-tab.svg" color="#136632">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body>
 
-    <nav id="navbar">
 
+    <header>
+        <img class="hintergrund" src="img/Hintergrund.png" alt="achdugrueneneune_hintergrund"/>
+        <div class="front_elemente">
+            <img class="baum_links" src="img/Baum_groß_links.png" alt="achdugrueneneune">
+            <img class="text_header" src="img/Texte_gesamt.png" alt="achdugrueneneune">
+            <img class="text_header_portrait" src="img/Texte_gesamt_portrait_svg.svg" alt="achdugrueneneune">
+            <img class="baum_rechts" src="img/Baum_groß_rechts.png" alt="achdugrueneneune">
+        </div>
+    </header>
+
+
+
+
+    <nav>
+    <div class="inside_nav">
         <ul>
-            <img src="img/Logo_hellgrau.png" alt="Logo" class="logoImNav">
-            <li><a href="#ueberUns" class="navElement">ÜBER UNS</a></li>
-            <li><a href="#line-up" class="navElement">Line-Up</a></li>
-            <li><a href="#tickets" class="navElement">Tickets</a></li>
-            <li><a href="#infos" class="navElement">Infos</a></li>
-            
-            
-            
+            <li><a href="#ueber_uns">ÜBER UNS</a></li>
+            <li><a href="#line-up">LINE-UP</a></li>
+            <li><a href="#tickets">TICKETS</a></li>
+            <li><a href="#infos">INFOS</a></li>
         </ul>
-    </nav>
-    <div class="head" id="head">
-        <div class="hinten">
-            <img src="img/Hintergrund1280.png" alt="logo" class="hintergrund" />
-            <img src="img/Baum_groß_links.png" alt="logo" class="baumLinks" />
-            <img src="img/Baum_groß_rechts.png" alt="logo" class="baumRechts" />
-            <img src="img/Texte_gesamt.png" alt="logo" class="ganzerText" />
-        </div>
-
-        <div class="smallScreen">
-            <img src="img/Textgesamt.png" alt="logo" class="headLogo" />
-            <img src="img/Datum.png" alt="logo" class="datum" />
-            <img src="img/Ort.png" alt="logo" class="ort" />
-            <img src="img/Bäume.png" alt="logo" class="baeume" />
-        </div>
+        <a href="#top"><img src="img/Logo_hellgrau.png" alt="achdugrueneneue_logo"></a>
     </div>
+    </nav>
 
 
 
-    <div class="content">
-        <section class="vorstellung" id="ueberUns">
+
+    <main>
+    <div class="inside">
+
+
+
+        <section class="ueber_uns" id="ueber_uns">
             <h1>ÜBER UNS</h1>
-            <p class="vorstellungstext">Ach du grüne Neune! Wir sind eine Gruppe junger Menschen, die Festivals schon
+            <p>Ach du grüne Neune! Wir sind eine Gruppe junger Menschen, die Festivals schon
                 seit Jahren zu ihren Leidenschaften zählt. Wir lieben es, ein Sommer-Wochenende gemeinsam mit Freunden
                 zu verbringen, neue Freundschaften zu schließen, zu guter Musik abzugehen und eine verrückte Zeit im
                 Camp zu erleben.
-                <br />
+                <br /><br />
                 Durch die vielen fantastischen Wochenenden ist ein Traum entstanden: Unser eigenes Festival zu
                 organisieren!
                 Einen Raum zu schaffen für Menschen, die unsere Leidenschaft teilen, einen Raum für gute Musik, für
                 Festival-Camping, für Flunkyball am Vormittag, für eine tolle Zeit mit Freunden.
                 Sei dabei und feier mit uns!
-
             </p>
-        </section>
+        </section>  <!-- Ende "ueber_uns" -->
+
+
+
 
         <section class="line-up" id="line-up">
-            <div class="ueberschrift">
-                LINE-UP
-            </div>
-            <div class="band1">
-                <div class="impvlse-bild">
-                    <img src="img/IMPVLSE.jpg" alt="foto1" class="foto1">
-                </div>
-                <div class="bandname1">
-                    IMPVLSE
-                </div>
+
+
+            <h1>LINE-UP</h1>
+
+            <article class="band_foto_links">
+                <img class="bandfoto" src="img/IMPVLSE.jpg" alt="impvlse">
                 <div class="bandtext">
-                    Seit 2017 produzieren wir in Nürnberg kompromisslosen und cinematischen Metalcore. In
-                    Zusammenarbeit mit Platin-Produzenten Andrew Wade veröffentlichten wir 2019 unsere Debüt-EP
-                    ViceVersa, worauf 2022 Point Blank folgte. Beide Alben spielten wir auf nationalen sowie
-                    internationalen Bühnen. Seit unserem Live-Debüt 2018 können wir auf mehrere Highlights
-                    zurückblicken: Eine Russland-Tour, zahlreiche Shows in Deutschland und Österreich und einen
-                    Auftritt bei Rock im Park 2022 vor 5.000 Festivalbesuchern.
+                    <h2>IMPVLSE</h2>
+                    <p>
+                        Seit 2017 produzieren wir in Nürnberg kompromisslosen und cinematischen Metalcore. In
+                        Zusammenarbeit mit Platin-Produzenten Andrew Wade veröffentlichten wir 2019 unsere Debüt-EP
+                        ViceVersa, worauf 2022 Point Blank folgte. Beide Alben spielten wir auf nationalen sowie
+                        internationalen Bühnen. Seit unserem Live-Debüt 2018 können wir auf mehrere Highlights
+                        zurückblicken: Eine Russland-Tour, zahlreiche Shows in Deutschland und Österreich und einen
+                        Auftritt bei Rock im Park 2022 vor 5.000 Festivalbesuchern.
+                    </p>
+                    <p class="bandlink"><a href="https://www.impvlse.de/" target="_blank">https://www.impvlse.de/</a></p>
                 </div>
+            </article>
 
+            <article class="band_foto_rechts">
+                <div class="bandtext">
+                    <h2>Nachtkinder</h2>
+                    <p>
+                        Wen findet man viel zu spät in der Nacht am Tresen einer verrauchten alten Kneipe?
+                        Wahrscheinlich nur wahre Kinder der Nacht. Daher kommt wohl der Name dieser
+                        Band: Nachtkinder.
+                        Inspiriert von Indie, Grunge, Punk und Rock n’ Roll versetzt dich die Musik der
+                        Nachtkinder in die Szenerie der letzten Stunden einer durchzechten Nacht.
+                        Noahs rauer Gesang gepaart mit Mo’s melodiösen Basslines trifft auf Mikas wildes
+                        Klavierspiel und Mais’ groovige Drums. Gemeinsam ergeben die vier eine
+                        dunkelbunte Welt der Klänge, in welche man sich sofort hineingezogen fühlt - und
+                        so schnell auch nicht mehr hinausfindet.
+                    </p>
+                    <p class="bandlink"><a href="https://www.nachtkinder.eu/" target="_blank">https://www.nachtkinder.eu/</a></p>
+                </div>
+                <img class="bandfoto" src="img/nachtkinder.jpg" alt="nachtkinder">
+            </article>
+
+            <article class="band_foto_links">
+                <img class="bandfoto" src="img/BLACKTORY_Bandfoto_1.jpg" alt="the_witchhouse_blues_band">
+                <div class="bandtext">
+                    <h2>BLACKTORY</h2>
+                    <p>
+                        Unter dem Motto 'Crucify the Dark' spielen wir von Blacktory seit 2018 Alternativ Rock, der von Herzen kommt. Nach zwei Singles und rund 50 Shows, unter anderem als Support für Lonely Spring, Von Welt und Stand Up Stacy, erschien im Herbst 2022 die erste EP 'Drowned in Emotions'. Neben halligen Gitarrensounds erlebt man uns live aber vor allem roh und emotionsgeladen. Zwei Gitarren, Schlagzeug und Bass reichen aus um all das zu sagen, wozu Worte alleine nicht in der Lage sind. Blacktory - Lighting Up The Night
+                    </p>
+                    <p class="bandlink"><a href="https://blacktory.de/" target="_blank">https://blacktory.de/</a></p>
+                </div>
+            </article>
+
+            <article class="band_foto_rechts">
+                <div class="bandtext">
+                    <h2>The Witchhouse Blues Band</h2>
+                    <p>
+                        Wie eine an die Wand geworfene Nudel lieben wir Katzen und Kanarienvögel. Seit unzähligen Zeiten befreien wir die Prinzessin und helfen ihr bei den nachzuholenden Hausaufgaben. Aber wir tauschen sehr ungern aber manchmal sehr gerne Boote und leckeres Essen. Wie ihr seht ist für alles gesorgt und wenn ihr möchtet laden wir euch gerne ein.
+                    </p>
+                    <p class="bandlink"><a href="#" target="_blank"></a></p>
+                </div>
+                <img class="bandfoto" src="img/the_witchhouse_blues_band.JPG" alt="the_witchhouse_blues_band">
+            </article>
+
+            <article class="band_foto_links">
+                <img class="bandfoto" id="fosten" src="img/fosten.jpg" alt="fosten">
+                <div class="bandtext">
+                    <h2>FOSTEN</h2>
+                    <p>
+                        FOSTEN gibt es zwar noch nicht lange, dennoch gibt es einiges was er mit seinen Texten erzählen möchte. Seine Musik spricht von Träumen und Herausforderungen, wobei jede Geschichte immer einen wahren Kern besitzt.<br/>
+                        <br/>
+                        Mit sowohl englischen als auch deutschen Texten, begleitet mit Gitarre, kann man kurz innehalten, sein Getränk genießen und zuhören.
+                    </p>
+                    <p class="bandlink"><a href="#" target="_blank"></a></p>
+                </div>
+            </article>
+
+            <p class="weitere_bands_folgen">... weitere Bands folgen!</p>
+
+
+        </section> <!-- Ende "line-up" -->
+            
+
+
+
+        <section class="tickets" id="tickets">
+            <h1>TICKETS</h1>
+            <p>
+                Wochenend-Ticket inkl. Camping und Parken: 35€ <br/>
+                <br/>
+                Ticketshop bald online! <br /> 
+                Jetzt vorreservieren per Mail: 
+                <a href="mailto:festival@achdugruene9.com" target="_blank">festival@achdugruene9.com</a>
+            </p>
+        </section> <!-- Ende "tickets" -->
+
+
+
+
+        <section class="infos" id="infos">
+
+
+            <h1>INFOS</h1>
+
+            <img  class="info_bild" src="img/InfoBild.jpg" alt="info">
+
+            <div class="info_articles">
+                <article class="info_article">
+                    <h3>Location, Anfahrt & Parken</h3>
+                    <p>
+                        Das Festival findet in einem Kirschgarten in der Nähe von 91245 Winterstein statt. Einen Google-Maps-Link findet
+                        ihr hier: <a href="https://goo.gl/maps/owzTgmqA2m4mCtPt6?coh=178571&entry=tt " target="_blank">Öffne Google-Maps!</a> <br/>
+                        <br/>
+                        Auf dem Gelände gibt es reichlich Platz für Zelte.<br />
+                        Autos müssen leider draußen bleiben, eine Gelegenheit im Camper zu schlafen gibt es leider nicht.<br />
+                        Der Parkplatz ist ca. 10 Minuten zu Fuß entfernt, genauere Infos folgen.
+                    </p>
+                </article>
+
+                <article class="info_article">
+                    <h3>Einlass</h3>
+                    <p>
+                        Einlass zum Festivalgelände und zum Campingplatz ist am Freitag, dem 8. September 2023 um 8 Uhr.<br/>
+                        <br/>
+                        Der Campingplatz schließt am Sonntag, dem 10. September 2023 morgens.
+                    </p>
+                </article>
+
+                <article class="info_article">
+                    <h3>Camping</h3>
+                    <p>
+                        Mitbringen müsst ihr alles, was ihr üblicherweise auf ein Festival mitnehmt: Zelte, Isomatten, Schlafsäcke, Stühle, Essen, Kocher, etc.<br/>
+                        <br/>
+                        Getränke-Schleppen könnt ihr euch sparen, denn wir bieten gekühltes Bier zum Freundschaftspreis von 1,50€ an.
+                        Ein kleines Essensangebot wird es ebenfalls geben. Weitere Infos siehe unter “Essen & Trinken”.<br/>
+                        <br/>
+                        Für eure Bedürfnisse und Hygiene wird es mobile Toiletten sowie fließendes Wasser geben.
+                    </p>
+                </article>
+
+                <article class="info_article">
+                    <h3>Programm</h3>
+                    <p>
+                        Freitag- und Samstagabend wird es an unserer Bühne verschiedene Musik-Acts von Bands und DJs geben. Ein genauer Timetable folgt.
+                    </p>
+                </article>
+
+                <article class="info_article">
+                    <h3>Essen & Trinken</h3>
+                    <p>
+                        Wir haben eine Bar, die von morgens bis nachts für euch geöffnet ist und gekühltes Bier sowie Longdrinks und Shots zu freundlichen Preisen anbietet.
+                        Gegen den Hunger gibt es einen Essensstand, weitere Infos dazu folgen.
+                    </p>
+                </article>
             </div>
-            <div class="band2">
-                <div class="nachtkinder">
-                    <img src="img/nachtkinder.jpg" alt="foto1" class="foto2">
-                </div>
-                <div class="bandname2">
-                    Nachtkinder
-                </div>
-                <div class="bandtext2">
-                    Wen findet man viel zu spät in der Nacht am Tresen einer verrauchten alten Kneipe?
-                    Wahrscheinlich nur wahre Kinder der Nacht. Daher kommt wohl der Name dieser
-                    Band: Nachtkinder.
-                    Inspiriert von Indie, Grunge, Punk und Rock n’ Roll versetzt dich die Musik der
-                    Nachtkinder in die Szenerie der letzten Stunden einer durchzechten Nacht.
-                    Noahs rauer Gesang gepaart mit Mo’s melodiösen Basslines trifft auf Mikas wildes
-                    Klavierspiel und Mais’ groovige Drums. Gemeinsam ergeben die vier eine
-                    dunkelbunte Welt der Klänge, in welche man sich sofort hineingezogen fühlt - und
-                    so schnell auch nicht mehr hinausfindet.
-
-                </div>
-
-                <!--<div class="band3">
-            <div class="The-Witchhouse-Blues-Band"> 
-                <img src="img/bandfoto1.png" alt="foto1" class="foto3">
-            </div> 
-            <div class="bandname3">
-                The Witchhouse Blues Band 
-            </div>
-
-                <div class="bandtext3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                    tempor
-                    invidunt <br />ut labore et dolore magna aliquyam erat, sed diam voluptua. <br /> At vero eos et
-                    accusam
-                    et justo duo dolores et ea rebum.<br /> Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-                    ipsum dolor sit amet.
-                </div>
-            </div>-->
-        </section>
-        <div class="unterLineUp">
-            <strong >
-               <br/> ...weitere Bands folgen!
-            </strong>
-        </div>
-    </div>
 
 
+        </section> <!-- Ende "infos" -->
 
-    <section class="tickets" id="tickets">
-        <div class="ueberschrift">TICKETS</div>
-        <p class="infoText">
-            Ticketshop bald online! <br /> Jetzt vorreservieren per Mail: festival@achdugruene9.de
-        </p>
-    </section>
-
-    <section class="infos" id="infos">
         
-        <div class="ueberschrift">INFOS</div>
-        <img src="img/InfoBild.jpg" alt="" class="infoBild">
-        <p class="infoText">
-        <div class="unterueberschrift">
-            <strong>Location, Anfahrt & Parken</strong>
-        </div>
 
-        Das Festival findet in einem Kirschgarten in der Nähe von 91245 Winterstein statt. Einen Google-Maps-Link findet
-        ihr hier: <a href="https://goo.gl/maps/owzTgmqA2m4mCtPt6?coh=178571&entry=tt " target="_blank">Zeig mir die
-            Karte!</a> Auf dem Gelände gibt es reichlich Platz für Zelte und Bäume für Hängematten. Autos müssen leider
-        draußen
-        bleiben, eine Gelegenheit im Camper zu schlafen gibt es leider nicht.
-
-        Der Parkplatz ist ca. 10 Minuten zu Fuß entfernt, genauere Infos folgen. <br />
-        <div class="unterueberschrift">
-            <strong><br />Einlass</strong>
-        </div>
-        Einlass zum Festivalgelände und zum Campingplatz ist am Freitag, dem 8. September 2023 gegen Mittag, die genaue
-        Zeit wird noch bekannt gegeben.
-        Der Campingplatz schließt am Sonntag, dem 10. September 2023 morgens.
-
-        <div class="unterueberschrift">
-            <strong><br />Camping</strong>
-        </div>
-        Mitbringen müsst ihr alles, was ihr üblicherweise auf ein Festival mitnehmt: Zelte, Isomatten, Schlafsäcke,
-        Stühle, Essen, Kocher, etc.
-
-        Getränke-Schleppen könnt ihr euch sparen, denn wir bieten gekühltes Bier zum Freundschaftspreis von 1,50€ an.
-        Ein kleines Essensangebot wird es ebenfalls geben. Weitere Infos siehe unter “Essen & Trinken”.
-
-        Für eure Bedürfnisse und Hygiene wird es mobile Toiletten sowie fließendes Wasser geben
-        <div class="unterueberschrift">
-            <strong><br />Programm</strong>
-        </div>
-
-        Freitag- und Samstagabend wird es an unserer Bühne verschiedene Musik-Acts von Bands und DJs geben. Ein genauer
-        Timetable folgt.
-        <div class="unterueberschrift">
-            <strong><br />Essen & Trinken</strong>
-        </div>
+    </div> <!-- Ende "inside" -->
+    </main>
 
 
-        Wir haben eine Bar, die von morgens bis nachts für euch geöffnet ist und gekühltes Bier sowie Longdrinks und
-        Shots zu freundlichen Preisen anbietet.
 
-        Für den Hunger gibt es einen Essensstand, weitere Infos dazu folgen.
-
-
-        </p>
-    </section>
 
     <footer>
-        <div class="grenze">
+    <div class="inside">
 
-        </div>
-        <img src="img/Footer Newsletter.png" alt="footer" class="footerImg">
+        <!-- <section class="unterstuetzer">
+            <h5>mit Unterstützung von:</h5>
+            <div class="unterstuetzer_logos">
+                <a href="../#"><img src="img/Logo.png" alt="Logo"></a>
+                <a href="../#"><img src="img/Logo.png" alt="Logo"></a>
+                <a href="../#"><img src="img/Logo.png" alt="Logo"></a>
+            </div>
+        </section> -->
 
-        <span class="footerText">
-            <br /><br />
-            Ach du grüne Neune Festival<br />
-            festival@achdugruene9.de<br />
-           <a href="#" class="impressum">Impressum</a> 
-        </span>
+        <section class="footer_links">
+            <ul class="law">
+                <li><a href="impressum.html" target="_blank">Impressum</a></li>
+                <!-- <li><a href="../#">Datenschutzerklärung</a></li>
+                <li><a href="../#">AGB</a></li> -->
+                <br/>
+                <a href="mailto:festival@achdugruene9.com" target="_blank">festival@achdugruene9.com</a>
+            </ul>
+        </section>
+
+        <!-- <section class="copyright">
+            <p>&copy; Grüne Neune e.V.</p>
+        </section> -->
+
+    </div> <!-- Ende "inside" -->
     </footer>
-    <script src="src/index.js"></script>
+
+
+
 
 </body>
 
