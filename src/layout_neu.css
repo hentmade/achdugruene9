@@ -224,6 +224,11 @@ main section {
          color: white;
       }
 
+      .line-up .genres {
+         font-style: italic;
+         text-align: center;
+      }
+
       .line-up .weitere_bands_folgen {
          font-weight: bold;
          text-align: center;
@@ -255,15 +260,21 @@ main section {
          object-position: 100%;
       }
 
+      #blackscreen {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+      }
+
       .line-up .band_foto_links {
          display: grid;
-         grid-template-columns: 3fr 7fr;
+         grid-template-columns: 35fr 65fr;
          margin-bottom: 40px;
       }
 
       .line-up .band_foto_rechts {
          display: grid;
-         grid-template-columns: 7fr 3fr;
+         grid-template-columns: 65fr 35fr;
          margin-bottom: 40px;
       }   
 
@@ -274,14 +285,27 @@ main section {
          .line-up .band_foto_rechts .bandfoto { order: 1; }
       }
 
+      @media (max-width: 710px) {
+         #blackscreen { flex-direction: column; }
+      }
+
 
 
 
 
 /* Fein-Layout tickets */
 
-      .tickets p {
+      .tickets .ab_18 {
          text-align: center;
+         font-weight: bold;
+         margin: 40px 0 0 0;
+      }
+
+      .tickets .ab_18 p {
+         display: inline;
+         padding: 5px;
+         color: white;
+         background-color: var(--G9_dunkelgrün);
       }
 
 
