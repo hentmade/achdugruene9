@@ -295,17 +295,10 @@ main section {
 
 /* Fein-Layout tickets */
 
-      .tickets .ab_18 {
-         text-align: center;
+      .tickets p {
+         color: red;
          font-weight: bold;
-         margin: 40px 0 0 0;
-      }
-
-      .tickets .ab_18 p {
-         display: inline;
-         padding: 5px;
-         color: white;
-         background-color: var(--G9_dunkelgrün);
+         text-align: center;
       }
 
 
@@ -321,6 +314,11 @@ main section {
          display: grid;
          grid-template-columns: 1fr 1fr;
          grid-gap: 50px;
+      }
+
+      .info_articles h3 {
+         background-color: var(--G9_hellgrün);
+         padding: 2px 0px 2px 5px;
       }
 
       @media (max-width: 640px) {
