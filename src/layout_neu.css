@@ -220,6 +220,47 @@ main section {
 
 /* Fein-Layout line-up */
 
+      .bands-djs {
+         padding-top: 0;
+      }
+
+      .smallheader_line-up {
+         display: grid;
+         grid-template-columns: 1fr 1fr 8fr;
+         grid-column-gap: 5px;
+      }
+
+      .smallheader_line-up p {
+         padding: 5px;
+      }
+
+      .smallheader_line-up p a {
+         font-size: 20px;
+         font-weight: bold;
+         color: black;
+         text-decoration: none;
+      }
+
+      #bands #smallheader_bands {
+         background-color: var(--G9_dunkelgrün);
+         border-radius: 5%;
+      }
+
+      #bands #smallheader_bands a {
+         color: white;
+      }
+
+      #djs #smallheader_djs {
+         background-color: var(--G9_dunkelgrün);
+         border-radius: 5%;
+      }
+
+      #djs #smallheader_djs a {
+         color: white;
+      }
+
+
+
       .line-up a {
          color: white;
       }
@@ -287,6 +328,33 @@ main section {
 
       @media (max-width: 710px) {
          #blackscreen { flex-direction: column; }
+      }
+
+
+      #djs {
+         display: flex;
+         flex-direction: column;
+         margin-top: 50px;
+      }
+
+      #djs .smallheader_line-up {
+         margin-bottom: 20px;
+      }
+
+      #djs .dj {
+         display: grid;
+         grid-template-columns: 1fr 2fr;
+      }
+
+      #djs .dj p {
+         margin: 0 30px 15px 0;
+      }
+
+      @media (max-width: 460px) {
+         #djs .dj  { 
+            grid-template-columns: 1fr;
+            margin-bottom: 30px;
+         }
       }
 
 
