@@ -216,6 +216,11 @@ main section {
 
 /* Fein-Layout ueber-uns */
 
+      .stimmung2023 {
+         width: 90vw;
+         margin-bottom: 20px;
+      }
+
 
 
 /* Fein-Layout line-up */
@@ -439,15 +444,23 @@ main section {
       }
 
       .unterstuetzer_logos {
-         display: flex;
-         flex-direction: row;
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      @media (max-width: 700px) {
+         .unterstuetzer_logos { grid-template-columns: 1fr 1fr; }
+         }
+
+      @media (max-width: 440px) {
+      .unterstuetzer_logos { grid-template-columns: 1fr; }
       }
 
       .unterstuetzer_logos a {
          display: block;
-         height: 60px;
-         width: 60px;
-         margin: 10px 10px 10px 0;
+         height: 160px;
+         width: 160px;
+         margin: 10px 70px 10px 0;
       }
 
       .unterstuetzer_logos img {
