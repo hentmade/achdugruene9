@@ -1,0 +1,53 @@
+@import url(layout_neu.css);
+
+
+
+#title-helfer-anmeldung {
+   margin-top: 50px;
+}
+
+#helferformular {
+   display: flex;
+   flex-direction: column;
+}
+
+#helferformular .form-section {
+   margin-top: 50px;
+   padding-top: 0;
+   display: flex;
+   flex-direction: column;
+}
+
+#helferformular .form-section p {
+   margin-top: 20px;
+   margin-bottom: 5px;
+}
+
+#helferformular #kategorie-auswahl {
+   margin-top: 0px;
+}
+
+#helferformular label {
+   margin-top: 10px;
+}
+
+#helferformular input {
+   max-width: 200px;
+}
+#helferformular textarea {
+   max-width: 200px;
+}
+
+.checkbox {
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+#helferformular h4 {
+   margin-bottom: 10px;
+}
+
+#helferformular button {
+   margin-top: 40px;
+   max-width: 150px;
+}

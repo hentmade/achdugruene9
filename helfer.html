@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Festival von 8.-10. September 2023 in 91245 Winterstein. Rund 200 Gäste, 3 Tage Camping, 7 Bands, 5 DJs. Jetzt Tickets sichern!">
 
-    <link rel="stylesheet" href="src/layout_neu.css" />
+    <link rel="stylesheet" href="src/layout_helfer.css" />
 
     <link rel="icon" href="./favicon-96x96.png" sizes="96x96">
     <link rel="apple-touch-icon" href="./apple-touch-icon.png" sizes="144x144">
@@ -53,8 +53,135 @@
     <div class="inside">
 
 
+        <h3 id="title-helfer-anmeldung">Anmeldung als Helfer*in</h3>
 
-        <form></form>
+        <form id="helferformular">
+
+            <section id="kategorie-auswahl" class="form-section">
+                <p>
+                    Schön, dass du beim Ach du grüne Neune! Festival 2024 unterstützen möchtest! <br>
+                    Wir haben 4 Helfer*innen-Kategorien, zwischen denen du dich entscheiden kannst:
+                </p>
+                <div class="checkbox">
+                    <input type="radio" id="voll-helfer1" name="helferkategorie" checked>
+                    <label for="voll-helfer1">Voll-Helfer*in: 1 Tag Auf- ODER Abbau + 2 Schichten á 3h (Bar/Einlass) = free Ticket</label>
+                </div>
+                <div class="checkbox">
+                    <input type="radio" id="voll-helfer2" name="helferkategorie">
+                    <label for="voll-helfer2">Voll-Helfer*in: 5 Schichten á 3h (Bar/Einlass) = free Ticket</label>
+                </div>
+                <div class="checkbox">
+                    <input type="radio" id="halb-helfer1" name="helferkategorie">
+                    <label for="halb-helfer1">Halb-Helfer*in: 2 Schichten á 3h (Bar/Einlass) = Ticket zum halben Preis</label>
+                </div>
+                <div class="checkbox">
+                    <input type="radio" id="halb-helfer2" name="helferkategorie">
+                    <label for="halb-helfer2">Halb-Helfer*in: 1 Tag Auf- ODER Abbau = Ticket zum halben Preis</label>
+                </div>
+
+                <p style="font-size: 14px; color: red; margin-top: 10px">Hinweis: Die Bar- oder Einlass-Schichten, für die wir dich einteilen, können irgendwann zwischen 8 Uhr morgens und 3 Uhr nachts sein. Wir achten bei der Planung natürlich auf Ruhezeiten, das heißt du wirst nicht bis 3.00 Uhr und dann gleich wieder um 8.00 Uhr eingeteilt werden. Doppel-Schichten können aber vorkommen!</p>
+            </section>
+
+            <section id="auf-abbau" class="form-section">
+                <h4>Auf-/Abbau</h4>
+                <p>Du kannst dich zwischen Auf- ODER Abbau entscheiden und verpflichtest dich, dir den ganzen Tag Zeit zu nehmen. Natürlich kannst du auch bei beidem unterstützen, wenn du möchtest.</p>
+                <div class="checkbox">
+                    <input type="checkbox" id="aufbau" name="aufbau">
+                    <label for="aufbau">Aufbau, Mi 4. September 2024, ab 8.00 Uhr</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="abbau" name="abbau">
+                    <label for="aufbau">Abbau, Mo 9. September 2024, bis 18.00 Uhr</label>
+                </div>
+            </section>
+
+            <section id="schichten" class="form-section">
+                <h4>Schichten während dem Festival</h4>
+
+                <p>Wann wirst du anreisen und ab wann stehst du demnach für Bar- und Einlass-Schichten zur Verfügung?</p>
+                <div class="checkbox">
+                    <input type="radio" id="donnerstag-früh" name="anreise" checked>
+                    <label for="donnerstag-früh">Do 5. September 2024, ab 10 Uhr</label>
+                </div>
+                <div class="checkbox">
+                    <input type="radio" id="donnerstag-abend" name="anreise">
+                    <label for="donnerstag-abend">Do 5. September 2024, ab 18 Uhr</label>
+                </div>
+                <div class="checkbox">
+                    <input type="radio" id="freitag-früh" name="anreise">
+                    <label for="freitag-früh">Fr 6. September 2024, ab 8 Uhr</label>
+                </div>
+                <div class="checkbox">
+                    <input type="radio" id="freitag-abend" name="anreise">
+                    <label for="freitag-abend">Fr 6. September 2024, ab 18 Uhr</label>
+                </div>
+                <div class="checkbox">
+                    <input type="radio" id="samstag-früh" name="anreise">
+                    <label for="samstag-früh">Sa 7. September 2024, ab 8 Uhr</label>
+                </div>
+
+                <p>Wann wirst du abreisen und bis wann stehst du demnach für Bar- und Einlass-Schichten zur Verfügung?</p>
+                <div class="checkbox">
+                    <input type="radio" id="freitag-abend" name="abreise">
+                    <label for="freitag-abend">Fr 6. September 2024, 20 Uhr</label>
+                </div>
+                <div class="checkbox">
+                    <input type="radio" id="samstag-früh" name="abreise">
+                    <label for="samstag-früh">Sa 7. September 2024, 11 Uhr</label>
+                </div>
+                <div class="checkbox">
+                    <input type="radio" id="samstag-abend" name="abreise">
+                    <label for="samstag-abend">Sa 7. September 2024, 19 Uhr</label>
+                </div>
+                <div class="checkbox">
+                    <input type="radio" id="samstag-nacht" name="abreise">
+                    <label for="samstag-nacht">So 8. September 2024, 3 Uhr</label>
+                </div>
+                <div class="checkbox">
+                    <input type="radio" id="sonntag-vormittag" name="abreise" checked>
+                    <label for="sonntag-vormittag">So 8. September 2024, 11 Uhr</label>
+                </div>
+
+                <p>Hast du eine Präferenz? Wir versuchen es bei der Planung zu berücksichtigen, können aber nichts garantieren.</p>
+                <div class="checkbox">
+                    <input type="radio" id="bar" name="schicht-präferenz">
+                    <label for="bar">Bar</label>
+                </div>
+                <div class="checkbox">
+                    <input type="radio" id="einlass" name="schicht-präferenz">
+                    <label for="einlass">Einlass</label>
+                </div>
+                <div class="checkbox">
+                    <input type="radio" id="keine-präferenz" name="schicht-präferenz" checked>
+                    <label for="keine-präferenz">keine Präferenz</label>
+                </div>
+            </section>
+
+            <section id="konktak" class="form-section">
+                <h4>Kontakt</h4>
+                <label for="vorname">Vorname:</label>
+                <input type="text" id="vorname" name="vorname" required="required">
+    
+                <label for="nachname">Nachname:</label>
+                <input type="text" id="nachname" name="nachname" required="required">
+    
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required="required">
+    
+                <label for="phone">Mobilnummer:</label>
+                <input type="number" id="phone" name="phone" required="required">
+            </section>
+
+            <section id="submit" class="form-section">
+                <label for="anmerkungen">Hast du Anmerkungen?</label>
+                <textarea id="anmerkungen" name="anmerkungen" rows="5"></textarea>
+                <button type="submit">Als Helfer anmelden</button>
+            </section>
+
+
+            
+
+        </form>
 
         
 
