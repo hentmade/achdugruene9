@@ -2,6 +2,7 @@ html {
    --G9_dunkelgrün: rgb(19, 102, 50);
    --G9_hellgrün: rgb(197, 230, 188);
    --G9_hellgrau: rgb(245,245,245);
+   --G9_gelb: rgb(237,160,39);
    --G9_schriftart: Candara, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    --G9_schriftfarbe: rgb(0,0,0);
    --G9_schriftgröße: 18px;
@@ -65,10 +66,17 @@ main section {
       }
 
       @media (orientation: portrait) {
-         .text_header { display: none; }
+         .text_header_landscape { display: none; }
+      }
+
+      header {
+         position: relative;
+         height: calc(100vh - var(--G9_navbar_height));
       }
 
       header .hintergrund {
+         position: absolute;
+         top: 0;
          width: 100vw;
          height: calc(100vh - var(--G9_navbar_height));
          object-fit: cover;
@@ -82,67 +90,53 @@ main section {
          display: flex;
          flex-direction: row;
          flex-wrap: nowrap;
-         justify-content: space-between;
+         justify-content: center;
          height: calc(100vh - var(--G9_navbar_height));
          width: 100%;
       }
 
       .baum_links {
-         max-height: 80vh;
-         width: 15%;
+         height: calc(100vh - 60px - var(--G9_navbar_height));
+         max-width: 15%;
          align-self: self-end;
          object-fit: contain;
       }
 
-      .text_header {
-         max-height: 75vh;
-         width: 70%;
+      .text_header_landscape {
+         height: calc(100vh - 60px - var(--G9_navbar_height));
+         max-width: 70%;
          align-self: self-end;
-         padding-bottom: 40px;
          object-fit: contain;
       }
 
       .text_header_portrait {
-         /* max-height: 75vh;
-         width: 70%; */
+         height: calc(100vh - 60px - var(--G9_navbar_height));
          align-self: self-end;
          padding-bottom: 40px;
          object-fit: contain;
       }
 
       .baum_rechts {
-         max-height: 60vh;
-         width: 15%;
+         height: calc(100vh - 60px - var(--G9_navbar_height));
+         max-width: 15%;
          align-self: self-end;
          object-fit: contain;
       }
 
       @media (max-width: 991px) {
          .baum_links { display: none; }
-         .text_header { width: 100%; }
+         .text_header_landscape { width: 100%; max-height: 85vh; }
          .text_header_portrait { width: 100%; }
          .baum_rechts { display: none; }
       }
 
       @media (max-width: 600px) {
-         .text_header { padding-bottom: 0; align-self: center; }
+         .text_header_landscape { padding-bottom: 0; align-self: center; }
          .text_header_portrait { padding-bottom: 0; align-self: center; }
       }
 
 
 /* Fein-Layout nav */
-
-      .inside_nav {
-         display: flex;
-         flex-wrap: nowrap;
-         justify-content: space-between;
-
-         max-width: 1120px;
-         margin: 0 auto 0 auto;
-         padding: 3px 30px;
-
-         height: var(--G9_navbar_height);
-      }
 
       nav {
          position: sticky;
@@ -150,22 +144,41 @@ main section {
          top: 0;
          background-color: var(--G9_dunkelgrün);
          border-bottom: 1px solid var(--G9_hellgrau);
+         z-index: 100;
+
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+
+         padding: 3px 0;
+         width: 100vw;
+         height: var(--G9_navbar_height);
       }
 
-      .inside_nav ul {
+      nav button {
+         display: none;
+         background-color: var(--G9_dunkelgrün);
+         border: none;
+         cursor: pointer;
+         height: var(--G9_navbar_height);
+         text-align: left;
+      }
+
+      nav ul {
          list-style: none;
          display: flex;
          flex-wrap: nowrap;
-         justify-content: space-between;
+         justify-content: center;
          align-items: center;
+         background-color: var(--G9_dunkelgrün);
          color: white;
          padding: 0;
          margin-bottom: 0;
       }
 
-      .inside_nav li a {
+      nav a {
          display: block;
-         width: 80px;
+         width: 150px;
          height: var(--G9_navbar_height);
          text-align: center;
          line-height: var(--G9_navbar_height);
@@ -177,49 +190,126 @@ main section {
          font-size: 16px;
       }
 
-      .inside_nav li:last-child {
+      nav li:last-child {
          border-right: 1px solid white;
       }
 
-      .inside_nav li a:hover, 
-      .inside_nav li a:focus {
+      nav a:hover, 
+      nav a:focus {
          background-color: var(--G9_hellgrau);
          color: var(--G9_dunkelgrün);
       }
 
       @media (hover: none) {
-         .inside_nav li a:hover, 
-         .inside_nav li a:focus {
+         nav a:hover, 
+         nav a:focus {
             background-color: var(--G9_hellgrau);
             color: var(--G9_dunkelgrün);
          }
 
-         .inside_nav li a:visited {
+         nav a:visited {
             background-color: var(--G9_dunkelgrün);
             color: white;
          }
       }
 
-      .inside_nav img {
-         width: 100%;
-         height: 100%;
+      @media (max-width: 900px) {
+         nav button {
+            display: inline-block;
+         }
+         nav ul {
+            display: none;
+            flex-direction: column;
+         }
+         nav a {
+            border-left: none;
+         }
+         nav li:last-child {
+            border-right: none;
+         }
+      }
+
+
+
+/* Fein-Layout Rückblick */
+
+      .rueckblick_zwischenbild {
+         display: block;
+         margin: 0 auto 50px auto;
+         max-height: 80vh;
          object-fit: contain;
       }
 
-      @media (max-width: 450px) {
-         .inside_nav img { display: none; }
-         .inside_nav { padding: 3px 0px; }
-         .inside_nav ul { justify-content: center; }
-         .inside_nav li a { width: 25vw; }
+      .slideshow {
+         margin-bottom: 30px;
+         position: relative;
       }
 
-
-/* Fein-Layout ueber-uns */
-
-      .stimmung2023 {
-         width: 90vw;
-         margin-bottom: 20px;
+      .slide {
+         display: none;
+         height: 80vh;
+         width: auto;
+         margin-left: auto;
+         margin-right: auto;
+         object-fit: contain;
       }
+
+      .slideshow_pfeile {
+         position: relative;
+      }
+
+      #prev, #next {
+         cursor: pointer;
+         position: absolute;
+         top: 50%;
+         width: auto;
+         margin-top: -22px;
+         padding: 16px;
+         color: white;
+         font-size: 18px;
+         transition: 0.6s ease;
+         border-radius: 0 3px 3px 0;
+         user-select: none;
+       }
+
+       #prev { left: calc(1%); }
+       #next { right: calc(-1%); }
+
+       #prev:hover, #next:hover {
+         background-color: rgba(0,0,0,0.8);
+       }
+
+       .slideshow_striche {
+         position: absolute;
+         bottom: 20px;
+         width: 100%;
+         text-align: center;
+       }
+
+       .strich {
+         cursor: pointer;
+         height: 2px;
+         width: 30px;
+         margin: 0 2px;
+         background-color: #bbb;
+         border-radius: 0%;
+         display: inline-block;
+         transition: background-color 0.6s ease;
+       }
+       
+       .active, .strich:hover {
+         background-color: white;
+       }
+
+       .fade {
+         animation-name: fade;
+         animation-duration: 1.5s;
+       }
+       
+       @keyframes fade {
+         from {opacity: .4}
+         to {opacity: 1}
+       }
 
 
 
@@ -292,7 +382,7 @@ main section {
          flex-direction: column;
       }
 
-      .line-up img {
+      .bandfoto {
          width: 100%;
          height: 100%;
          object-fit: cover;
@@ -389,7 +479,6 @@ main section {
 /* Fein-Layout tickets */
 
       .tickets p {
-         color: red;
          font-weight: bold;
          text-align: center;
       }
@@ -400,7 +489,8 @@ main section {
       .info_bild {
          display: block;
          margin: 0 auto 50px auto;
-         max-height: 300px;
+         max-height: 80vh;
+         object-fit: contain;
       }
 
       .info_articles {
@@ -411,6 +501,7 @@ main section {
 
       .info_articles h3 {
          background-color: var(--G9_hellgrün);
+         color: black;
          padding: 2px 0px 2px 5px;
       }
 
