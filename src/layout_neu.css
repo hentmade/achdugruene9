@@ -507,6 +507,10 @@ main section {
          text-align: center;
       }
 
+      .tickethinweis p {
+         font-weight: lighter;
+      }
+
 
 /* Fein-Layout infos */
 
