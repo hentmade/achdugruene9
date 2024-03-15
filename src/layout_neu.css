@@ -329,49 +329,9 @@ main section {
 
 /* Fein-Layout line-up */
 
-      .bands-djs {
-         padding-top: 0;
-      }
-
-      .smallheader_line-up {
-         display: grid;
-         grid-template-columns: 1fr 1fr 8fr;
-         grid-column-gap: 5px;
-      }
-
-      .smallheader_line-up p {
-         padding: 5px;
-      }
-
-      .smallheader_line-up p a {
-         font-size: 20px;
-         font-weight: bold;
-         color: black;
-         text-decoration: none;
-      }
-
-      #bands #smallheader_bands {
-         background-color: var(--G9_dunkelgrün);
-         border-radius: 5%;
-      }
-
-      #bands #smallheader_bands a {
-         color: white;
-      }
-
-      #djs #smallheader_djs {
-         background-color: var(--G9_dunkelgrün);
-         border-radius: 5%;
-      }
-
-      #djs #smallheader_djs a {
-         color: white;
-      }
-
-
-
-      .line-up a {
-         color: white;
+      .line-up {
+         display: flex;
+         flex-direction: column;
       }
 
       .line-up .genres {
@@ -379,21 +339,19 @@ main section {
          text-align: center;
       }
 
-      .line-up .weitere_bands_folgen {
-         font-weight: bold;
-         text-align: center;
+      .band_container {
+         display: grid;
+         margin-bottom: 40px;
       }
 
-      .bandtext {
-         background-color: var(--G9_dunkelgrün);
-         color: white;
-         padding: 30px;
-         font-weight: lighter;
-      }
+      .bandfoto_links   {grid-template-columns: 35fr 65fr;}
+      .bandfoto_rechts  {grid-template-columns: 65fr 35fr;}
+      .bandfoto_rechts .bandfoto {order: 2;}
 
-      .line-up {
-         display: flex;
-         flex-direction: column;
+      @media (max-width: 600px) {
+         .band_container {grid-template-columns: 1fr;}
+         .bandfoto_rechts .bandfoto    {order: 1;}
+         .bandfoto_rechts .bandinfos   {order: 2;}
       }
 
       .bandfoto {
@@ -403,87 +361,18 @@ main section {
          object-position: 50%;
       }
 
-      #fosten {
-         width: 100%;
-         height: 100%;
-         object-fit: cover;
-         object-position: 100%;
-      }
-
-      #blackscreen {
-         display: flex;
-         flex-direction: row;
-         justify-content: space-between;
-      }
-
-      .line-up .band_foto_links {
-         display: grid;
-         grid-template-columns: 35fr 65fr;
-         margin-bottom: 40px;
-      }
-
-      .line-up .band_foto_rechts {
-         display: grid;
-         grid-template-columns: 65fr 35fr;
-         margin-bottom: 40px;
-      }   
-
-      @media (max-width: 600px) {
-         .line-up .band_foto_links { grid-template-columns: 1fr; }
-         .line-up .band_foto_rechts { grid-template-columns: 1fr; }
-         .line-up .band_foto_rechts .bandtext { order: 2; }
-         .line-up .band_foto_rechts .bandfoto { order: 1; }
-      }
-
-      @media (max-width: 710px) {
-         #blackscreen { flex-direction: column; }
-      }
-
-
-      #djs {
-         margin-top: 100px;
-      }
-
-      .djs {
-         display: grid;
-         grid-template-columns: 1fr 1fr 1fr 1fr;
-         grid-gap: 30px;
-         padding-top: 10px;
-      }
-
-      .djs .dj {
-         display: flex;
-         flex-direction: column;
-      }
-
-      .djs .dj .dj-title {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         text-align: center;
-         padding: 11px 16px;
+      .bandinfos {
          background-color: var(--G9_dunkelgrün);
          color: white;
-         min-height: 84px;
-      }
-
-      .dj-name {
-         font-weight: bold;
-         margin-bottom: 5px;
-      }
-
-      .dj-style {
+         padding: 30px;
          font-weight: lighter;
-         font-size: 14px;
-         margin-bottom: 0;
       }
 
-      @media (max-width: 850px) {
-         .djs { grid-template-columns: 1fr 1fr; }
-      }
+      .bandinfos a {color: white;}
 
-      @media (max-width: 440px) {
-         .djs { grid-template-columns: 1fr; }
+      .line-up .weitere_bands_folgen {
+         font-weight: bold;
+         text-align: center;
       }
 
 
