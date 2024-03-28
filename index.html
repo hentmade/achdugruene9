@@ -24,7 +24,7 @@
     <nav class="inside_nav" id="inside_nav">
         <button onclick="toggleMenu()"><img id="menubutton" src="img/nav/menuburger.svg" alt=""></button>
         <ul id="nav_ul">
-            <li><a onclick="toggleMenu()" href="#rueckblick2023">RÜCKBLICK 2023</a></li>
+            <li><a onclick="toggleMenu()" href="#rueckblick2023">RÜCKBLICK</a></li>
             <li><a onclick="toggleMenu()" href="#line-up">LINE-UP</a></li>
             <li><a onclick="toggleMenu()" href="#tickets">TICKETS</a></li>
             <li><a onclick="toggleMenu()" href="#infos">INFOS</a></li>
@@ -52,7 +52,7 @@
 
 
         <section class="rueckblick2023" id="rueckblick2023">
-            <h1>RÜCKBLICK 2023</h1>
+            <h1>RÜCKBLICK</h1>
 
             <div class="slideshow">
 
@@ -82,7 +82,7 @@
             </div>
 
             <h4>DANKE FÜR DAS TOLLE WOCHENENDE!</h4>
-            <p>
+            <p class="max-width-800px">
                 Wir schwelgen freudig in Erinnerungen und starten voller Energie mit den Planungen für 2024. <br />
                 Was für ein Wochenende! Wir sind begeistert von eurer Feierlaune, euren Pogos und Circle Pits, eurem Engagement beim Flunkyball-Turnier. <br />
                 Danke an alle Bands und DJs für ihre hervorragend präsentierte und zelebrierte Kunst! Danke an alle Helfer*innen am Einlass, an der Bar, am Pizza-Stand, an der Technik und im Hintergrund.<br />
@@ -99,39 +99,96 @@
 
             <h1>LINE-UP</h1>
 
-<!--                 <p class="genres">Genres: Punk, Alternative Rock, Indie, Metalcore, ...<br/><br/></p>
+                <div class="line-up-uebersicht">
+                    <div class="_2bands">
+                        <p><a href="#konrad48">KONRAD48</a></p>
+                        <p><a href="#enfys">ENFYS</a></p>
+                    </div>
+                    <div class="_3bands">
+                        <p><a href="#jawmonks">JAWMONKS</a></p>
+                        <p><a href="#dogwoods">DOGWOODS</a></p>
+                        <p><a href="#nachtkinder">NACHTKINDER</a></p>
+                    </div>
+                    <div class="_2bands">
+                        <p><a href="#pantsdown">PANTSDOWN</a></p>
+                        <p><a href="#feedingzebras">FEEDING ZEBRAS</a></p>
+                    </div>
+                    <div class="_1band">
+                        <p><a href="#schroedingerstaube">SCHRÖDINGERS TAUBE</a></p>
+                    </div>
+                    <div class="_2bands">
+                        <p><a href="#fosten">FOSTEN</a></p>
+                        <p><a href="#halbmast">HALBMAST</a></p>
+                    </div>
+                    <div class="_1band">
+                        <p><a href="#witchhouse">THE WITCHHOUSE BLUES BAND</a></p>
+                    </div>
+                </div>
 
-                <article class="band_container bandfoto_links">
+                <p class="genres">Genres: Rock, Punk, Alternative, Indie, Metal, ...<br/><br/></p>
+
+                <article id="konrad48" class="band_container bandfoto_links">
                     <img class="bandfoto" src="img/line-up/konrad48.jpg" alt="konrad48">
                     <div class="bandinfos">
                         <h2>Konrad48</h2>
                         <p>
-                            TODO
+                            Bereits 2002 in Lauf a.d. Pegnitz gegründet begeisterten die Jungs jahrelang ihre Fans mit Ska-Punk, bis sie 2012 ihr eigenes
+                            Festival ins Leben riefen - das KNRD Fest! Lange nicht auf der Bühne zelebrierten sie 2023 ihr "Comeback" auf selbigem Festival
+                            und hatten seitdem den ein oder anderen Live-Auftritt in der Region Nürnberg. Der Bandname kommt von einem Herren namens "Konrad",
+                            den die Jungs damals in einer Partynacht in Lauf kennenlernten. Warum noch die "48" ergänzt wurde, weiß keiner mehr so genau.
                         </p>
                         <p><a href="https://www.instagram.com/k0nrad48/" target="_blank">www.instagram.com/k0nrad48</a></p>
-                </article> -->
+                        <iframe width="300" height="80" src="https://www.youtube.com/embed/Fsyz0UTBZao?si=TG6Mawnj_S-nzhIg&amp;start=38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </article>
 
-<!--                 <article class="band_container bandfoto_rechts">
-                    <img class="bandfoto" src="img/line-up/pantsdown.jpg" alt="pantsdown">
+                <article id="enfys" class="band_container bandfoto_rechts">
+                    <img class="bandfoto" src="img/line-up/enfys2.jpg" alt="enfys">
                     <div class="bandinfos">
-                        <h2>Pantsdown</h2>
+                        <h2>Enfys</h2>
                         <p>
-                            Moderner Alternative mit kernigem Rock- Sound und einem mächtigen Gesang. Hierbei verschmelzen sie kreative
-                            Rock Riffs mit eingängigen Melodien und spielen immer wieder mit progressiven Elementen, die sie geschickt einfließen
-                            lassen. Bei ihren Live-Shows präsentieren sie ihre Songs voller Hingabe, energiegeladen und immer mit einer Hosentasche voller
-                            fränkischem Humor bewaffnet. Doch auch wenn sie sich selbst nicht immer allzu ernst nehmen, sind ihnen Inhalte wichtig.
-                            In ihrem Song "Prophets Of Hate" beziehen sie klar Stellung gegen Rassismus. Ihr Titel "1984" schildert die Aktualität
-                            der Utopien George Orwells in Zeiten der sozialen Netzwerke. 2018 gegründete, veröffentlichten sie im November 2019 ihr
-                            Debut-Album "PANTSDOWN". Ihr aktuelles Album „No Time To Rest“ erschien im März 2023. Hier knüpfen sie musikalisch an ihre
-                            erste Scheibe an, ohne diese zu kopieren oder sich selbst in Experimenten zu verlieren. Jetzt freuen sie sich darauf, ihre neuen
-                            Titel mit allen da draußen zu teilen.
+                            Bereit für eine außerirdische Erfahrung? Stellt euch vor: Ein intergalaktisches Raumschiff, in dem die kraftvollen Vocals von
+                            Nina Chuba auf die elektrisierende Energie von Electric Callboy treffen. Das Ergebnis? Enfys! Eine frische Hommage an das
+                            Genre, die mit Härte, weiblichen Vocals und deutschen Texten den deutschsprachigen Raum aufmischt. Enfys schaffen einen
+                            zeitlos-futuristischen Sound, der Pop, Electro und Metal zu einem energiegeladenen Mix vereint. Hits wie “Uns Lieben” und “Komm
+                            Mit” packen aktuelle Themen musikalisch wie auch visuell in eine Cyberwelt und begeistern mit mitreißenden Hooks, welche das
+                            Publikum so schnell nicht vergisst.
                         </p>
-                        <p><a href="https://www.instagram.com/pantsdown_band/" target="_blank">www.instagram.com/pantsdown_band</a></p>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0WTkamrqevjEsqbpIBtmlh?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <p><a href="https://www.the-enfys.de/" target="_blank">www.the-enfys.de</a></p>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/02IYfQVO0P5wYxlpE0pFOx?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
-                </article> -->
+                </article>
 
-<!--                 <article class="band_container bandfoto_links">
+                <article id="jawmonks" class="band_container bandfoto_links">
+                    <img class="bandfoto" src="img/line-up/jawmonks.jpg" alt="jawonks">
+                    <div class="bandinfos">
+                        <h2>Jawmonks</h2>
+                        <p>
+                            Drei Freunde, drei Instrumente – Gitarre, Bass, Schlagzeug – mehr braucht es nicht für Jawmonks.<br/>
+                            Nach „Guidetracks“ (2015) und „Horizon“ (2017) haben die Jungs aus Lauf a.d. Pegnitz 2020 ihre dritte EP „All That Remains“ aufgenommen und veröffentlicht.<br/>
+                            Texte über Mut, Verzweiflung, gebrochene Herzen, Zuversicht, Freundschaft, Liebe, sich selbst finden – Geschichten über das Leben, die ein jeder schon erlebt hat – das sind die Themen, dich auf der Platte die Hauptrolle spielen.<br/>
+                            Jawmonks – das steht im nun 14. Jahr der Bandgeschichte für Eingängigkeit, Energie, Spielfreude und den Willen, dem Hörer etwas mitzugeben.
+                        </p>
+                        <p><a href="https://www.instagram.com/jawmonks/" target="_blank">www.instagram.com/jawmonks</a></p>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0ydJbBinuTb3aQf28eh46s?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </article>
+
+                <article id="dogwoods" class="band_container bandfoto_rechts_breit">
+                    <img class="bandfoto" src="img/line-up/dogwoods.jpg" alt="dogwoods">
+                    <div class="bandinfos">
+                        <h2>Dogwoods</h2>
+                        <p>
+                            Gerade Rhythmen, treibende Gitarren, ein solides Fundament und eingängige Melodien zeichnen
+                            Dogwoods aus. Mit ihrer ersten EP „Full Blown“ haben die Jungs aus dem Großraum Nürnberg gezeigt,
+                            wie simpel ehrliche, handgemachte Rockmusik ist und dabei trotzdem überraschend und
+                            abwechslungsreich sein kann.
+                        </p>
+                        <p><a href="https://www.instagram.com/dogwoods_music/" target="_blank">www.instagram.com/dogwoods_music</a></p>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2KKKmpegL3m0mWnwMDdl4f?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </article>
+
+                <article id="nachtkinder" class="band_container bandfoto_links_breit">
                     <img class="bandfoto" src="img/line-up/nachtkinder.jpg" alt="nachtkinder">
                     <div class="bandinfos">
                         <h2>Nachtkinder</h2>
@@ -149,53 +206,90 @@
                         <p><a href="https://www.nachtkinder.eu/" target="_blank">www.nachtkinder.eu</a></p>
                         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0LEZxvKa80vB3bTA7PTGyd?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
-                </article> -->
+                </article>
 
-<!--                 <article class="band_container bandfoto_rechts">
-                    <img class="bandfoto" src="img/line-up/jawmonks.jpg" alt="jawonks">
+                <article id="pantsdown" class="band_container bandfoto_rechts">
+                    <img class="bandfoto" src="img/line-up/pantsdown.jpg" alt="pantsdown">
                     <div class="bandinfos">
-                        <h2>Jawmonks</h2>
+                        <h2>Pantsdown</h2>
                         <p>
-                            Drei Freunde, drei Instrumente – Gitarre, Bass, Schlagzeug – mehr braucht es nicht für Jawmonks.<br/>
-                            Nach „Guidetracks“ (2015) und „Horizon“ (2017) haben die Jungs aus Lauf a.d. Pegnitz 2020 ihre dritte EP „All That Remains“ aufgenommen und veröffentlicht.<br/>
-                            Texte über Mut, Verzweiflung, gebrochene Herzen, Zuversicht, Freundschaft, Liebe, sich selbst finden – Geschichten über das Leben, die ein jeder schon erlebt hat – das sind die Themen, dich auf der Platte die Hauptrolle spielen.<br/>
-                            Jawmonks – das steht im nun 14. Jahr der Bandgeschichte für Eingängigkeit, Energie, Spielfreude und den Willen, dem Hörer etwas mitzugeben.
+                            Moderner Alternative mit kernigem Rock- Sound und einem mächtigen Gesang. Hierbei verschmelzen sie kreative
+                            Rock Riffs mit eingängigen Melodien und spielen immer wieder mit progressiven Elementen, die sie geschickt einfließen
+                            lassen. Bei ihren Live-Shows präsentieren sie ihre Songs voller Hingabe, energiegeladen und immer mit einer Hosentasche voller
+                            fränkischem Humor bewaffnet. Doch auch wenn sie sich selbst nicht immer allzu ernst nehmen, sind ihnen Inhalte wichtig.
+                            In ihrem Song "Prophets Of Hate" beziehen sie klar Stellung gegen Rassismus. Ihr Titel "1984" schildert die Aktualität
+                            der Utopien George Orwells in Zeiten der sozialen Netzwerke. 2018 gegründete, veröffentlichten sie im November 2019 ihr
+                            Debut-Album "PANTSDOWN". Ihr aktuelles Album „No Time To Rest“ erschien im März 2023.
                         </p>
-                        <p><a href="https://www.instagram.com/jawmonks/" target="_blank">www.instagram.com/jawmonks</a></p>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0ydJbBinuTb3aQf28eh46s?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <p><a href="https://www.instagram.com/pantsdown_band/" target="_blank">www.instagram.com/pantsdown_band</a></p>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0WTkamrqevjEsqbpIBtmlh?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
-                </article> -->
+                </article>
 
-<!--                 <article class="band_container bandfoto_links">
-                    <img class="bandfoto" src="img/line-up/witchhouse_blues_band.JPG" alt="witchhouse_blues_band">
+                <article id="feedingzebras" class="band_container bandfoto_links">
+                    <img class="bandfoto" src="img/line-up/feeding_zebras.jpg" alt="feeding zebras">
                     <div class="bandinfos">
-                        <h2>The Witchhouse Blues Band</h2>
+                        <h2>Feeding Zebras</h2>
                         <p>
-                            Wie eine an die Wand geworfene Nudel lieben wir Katzen und Kanarienvögel. Seit unzähligen Zeiten befreien wir die Prinzessin und helfen ihr bei den nachzuholenden Hausaufgaben. Aber wir tauschen sehr ungern aber manchmal sehr gerne Boote und leckeres Essen. Wie ihr seht ist für alles gesorgt und wenn ihr möchtet laden wir euch gerne ein.
-                         </p> -->
-                        <!-- <p><a href="https://www.instagram.com/jawmonks/" target="_blank">www.instagram.com/jawmonks</a></p> -->
-                        <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6THrc4C8rjs8PpHhfsVuEc?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
-<!--                     </div>
-                </article> -->
+                            Wir sind Feeding Zebras, eine Melodic Death Metal Band aus Süddeutschland, genauer gesagt aus Ansbach und Umgebung in Mittelfranken. Unsere Reise begann, als sich drei Jungs zusammentaten, um ihren Musikstil weiterzuentwickeln, der stark vom Melodic Death Metal und Metalcore der frühen 2000er Jahre beeinflusst war, gemischt mit Teilen anderer Metal- und Rockinspirationen.
+                            Diese Reise führte uns 2020 zur Gründung von Feeding Zebras und nach fleißigem Songwriting und Proben nahmen wir unsere erste EP "Of Salvation And Decay" auf, die schließlich 2022 veröffentlicht wurde. Seitdem haben wir weiter Musik geschrieben, die wir lieben, Inhalte veröffentlicht, auf die wir stolz sind, und Bühnen in Brand gesetzt.
+                        </p>
+                        <p><a href="http://feeding-zebras.de/" target="_blank">www.feeding-zebras.de</a></p>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0EUvI4ISHv4N7KlIaTN9D0?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </article>
 
-<!--                 <article class="band_container bandfoto_rechts">
+                <article id="schroedingerstaube" class="band_container bandfoto_rechts">
+                    <img class="bandfoto" src="img/line-up/schroedingerstaube.JPG" alt="schroedingers taube">
+                    <div class="bandinfos">
+                        <h2>Schrödingers Taube</h2>
+                        <p>
+                            Fernab jeder Genre-Definition überzeugen wir dich mit genialen Texten und treibender Musik. Wir geben Gas gegen Mittelmaß!
+                            Du brauchst keine anderen Bands mehr, du brauchst nur noch Schrödingers Taube.
+                        </p>
+                        <p><a href="https://www.instagram.com/schroedingerstaube/" target="_blank">www.instagram.com/schroedingerstaube</a></p>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2lbvZs1l2l30ddGml6Z94z?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </article>
+
+                <article id="fosten" class="band_container bandfoto_links">
                     <img class="bandfoto" src="img/line-up/fosten.jpg" alt="fosten">
                     <div class="bandinfos">
                         <h2>FOSTEN</h2>
                         <p>
-                            FOSTEN gibt es zwar noch nicht lange, dennoch gibt es einiges was er mit seinen Texten erzählen möchte. Seine Musik spricht von Träumen und Herausforderungen, wobei jede Geschichte immer einen wahren Kern besitzt.<br/>
-                            <br/>
-                            Mit sowohl englischen als auch deutschen Texten, begleitet mit Gitarre, kann man kurz innehalten, sein Getränk genießen und zuhören.
+                            FOSTEN bespielt seit 2023 die Bühnen in Nürnberg und Umgebung. Vor allem dafür bekannt, Erlebnisse von sich und seinen 
+                            Mitmenschen in Texte zu verwandeln, baut er bei jedem Auftritt eine emotionale Bindung zwischen ihm und seinem 
+                            Publikum auf. Bei Auftritten wie dem Erlanger Newcomerfestival oder einer Show im Nürnberger Club Stereo 
+                            konnte FOSTEN dies unter Beweis stellen und sich als Geschichtenerzähler einen Namen machen.
                         </p>
                         <p><a href="https://www.instagram.com/iamfosten/" target="_blank">www.instagram.com/iamfosten</a></p>
                         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/63XW54mv7rVCriHMT7tCPe?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
-                </article> -->
+                </article>
 
+                <article id="halbmast" class="band_container bandfoto_rechts">
+                    <img class="bandfoto" src="img/line-up/halbmast.png" alt="halbmast">
+                    <div class="bandinfos">
+                        <h2>Halbmast</h2>
+                        <p>
+                            Halbmast, die 3-köpfige Deutsch-Punk-Metal Band spielt nur eigen Songs-kein Cover!
+                            Halbmast ist nicht in ein festes Genre einzuordnen. Bei fetten Riffs, hartem Sound und kritischen deutschen
+                            Texten, die zum Nachdenken anregen sollen, ist für jeden etwas dabei.
+                        </p>
+                    </div>
+                </article>
 
-            <p class="weitere_bands_folgen">Wir erstellen gerade unser Programm für 2024. Die Genres werden ähnlich wie in 2023 in Richtung Alternative Rock, Indie, Punk und Metalcore gehen.</p>
+                <article id="witchhouse" class="band_container bandfoto_links">
+                    <img class="bandfoto" src="img/line-up/witchhouse_blues_band.JPG" alt="the_witchhouse_blues_band">
+                    <div class="bandinfos">
+                        <h2>The Witchhouse Blues Band</h2>
+                        <p>
+                            Wie eine an die Wand geworfene Nudel lieben wir Katzen und Kanarienvögel. Seit unzähligen Zeiten befreien wir die Prinzessin und helfen ihr bei den nachzuholenden Hausaufgaben. Aber wir tauschen sehr ungern aber manchmal sehr gerne Boote und leckeres Essen. Wie ihr seht ist für alles gesorgt und wenn ihr möchtet laden wir euch gerne ein.
+                         </p>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4UgaJDJtX4MyCWqymhyz0B?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                     </div>
+                </article>
 
-            <img  class="info_bild" src="img/line-up/line-up.JPG" alt="line-up">
 
         </section> <!-- Ende "line-up" -->
             
@@ -204,7 +298,19 @@
 
         <section class="tickets" id="tickets">
             <h1>TICKETS</h1>
-            <div class="tickethinweis">
+            <div class="tickethinweis max-width-600px">
+                <h4>Ein Festival für jede*n!</h5>
+                <p>
+                    Das Ach du grüne Neune! Festival ist ein Ort, an dem jede*r Willkommen ist,
+                    unabhängig von Herkunft, Aussehen, Sexualität oder Religion. Wir sind ein Ort
+                    der Toleranz und möchten mit euch allen ein tolles Wochenende verbringen,
+                    bei dem sich jede*r wohl fühlt, so wie man ist. Deshalb akzeptieren wir
+                    keine Form von Rassismus, Sexismus, Faschismus, Homophobie oder jeder anderen
+                    Art von Diskriminierung.<br/>
+                    Mit dem Kauf eines Tickets akzeptierst du diese Werte.
+                </p>
+            </div>
+            <div class="tickethinweis max-width-600px">
                 <p>
                     Tickets gibt es nur im Vorverkauf. Es gibt eine sehr begrenzte Anzahl an Tagestickets. 
                     <br/>Gäste aus Oberndorf, Lilling und Winterstein erhalten nach Vorlage eines Wohnort-Nachweises einen deutlich vergünstigen Eintritt an der Abendkasse. 
@@ -227,7 +333,7 @@
 
             <img  class="info_bild" src="img/infos/info_bild.JPG" alt="info">
 
-            <div class="info_articles">
+            <div class="info_articles max-width-800px">
                 <article class="info_article">
                     <h3>Instagram</h3>
                     <p>
@@ -346,7 +452,7 @@
 
             <img  class="info_bild" src="img/ueber_uns/ueber_uns.JPG" alt="ueber_uns">
 
-            <p> Ach du grüne Neune! Wir sind eine Gruppe junger Menschen, die Festivals schon
+            <p class="max-width-800px"> Ach du grüne Neune! Wir sind eine Gruppe junger Menschen, die Festivals schon
                 seit Jahren zu ihren Leidenschaften zählt. Wir lieben es, ein Sommer-Wochenende gemeinsam mit Freunden
                 zu verbringen, neue Freundschaften zu schließen, zu guter Musik abzugehen und eine verrückte Zeit im
                 Camp zu erleben.
