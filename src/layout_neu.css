@@ -503,8 +503,10 @@ main section {
          border-radius: 5px;
        }
 
-       .info_article > summary:hover {
-         background-color: var(--G9_gelb);
+       @media (hover: hover){
+         .info_article > summary:hover {
+            background-color: var(--G9_gelb);
+          }
        }
 
        .info_article[open] > summary {
