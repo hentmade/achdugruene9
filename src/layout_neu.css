@@ -46,6 +46,14 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
 .max-width-800px {max-width: 800px;}
 .max-width-600px {max-width: 600px;}
 
+.scroll {overflow-y: scroll;}
+.scroll::-webkit-scrollbar{width: 5px;}
+.scroll::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   background-color: rgba(255,255,255,0.5);
+}
+
+
 h1 {
    font-size: 30px;
    text-align: center;
@@ -389,22 +397,8 @@ main section {
 
       .band_container {
          display: grid;
+         height: 350px;
          margin-bottom: 40px;
-      }
-
-      .bandfoto_links         {grid-template-columns: 35fr 65fr;}
-      .bandfoto_links_breit   {grid-template-columns: 45fr 55fr;}
-      .bandfoto_rechts        {grid-template-columns: 65fr 35fr;}
-      .bandfoto_rechts_breit  {grid-template-columns: 55fr 45fr;}
-      .bandfoto_rechts .bandfoto       {order: 2;}
-      .bandfoto_rechts_breit .bandfoto {order: 2;}
-
-      @media (max-width: 600px) {
-         .band_container {grid-template-columns: 1fr;}
-         .bandfoto_rechts .bandfoto          {order: 1;}
-         .bandfoto_rechts .bandinfos         {order: 2;}
-         .bandfoto_rechts_breit .bandfoto    {order: 1;}
-         .bandfoto_rechts_breit .bandinfos   {order: 2;}
       }
 
       .bandfoto {
@@ -414,14 +408,39 @@ main section {
          object-position: 50%;
       }
 
+      .bandfoto_links         {grid-template-columns: 35fr 65fr;}
+      .bandfoto_rechts        {grid-template-columns: 65fr 35fr;}
+      .bandfoto_rechts .bandfoto       {order: 2;}
+
       .bandinfos {
          background-color: var(--G9_dunkelgrün);
          color: white;
-         padding: 30px;
+         padding: 20px;
          font-weight: lighter;
       }
 
+      .bandinfos p {font-size: 16px;}
+
+      .bandtext {
+         height: 102.93px; /*calculated to reach 350px height of band_container*/
+      }
+
       .bandinfos a {color: white;}
+
+      @media (max-width: 600px) {
+         .band_container {
+            grid-template-columns: 1fr;
+            height: 550px;
+         }
+         .bandfoto {height: 220px;}
+         .bandfoto_rechts .bandfoto          {order: 1;}
+         .bandfoto_rechts .bandinfos         {order: 2;}
+         .bandtext {
+            height: 91.42px; /*calculated to reach 330px height of bandinfos*/
+         }
+         .bandinfos p {font-size: 14px;}
+      }
+
 
       .line-up .weitere_bands_folgen {
          font-weight: bold;
