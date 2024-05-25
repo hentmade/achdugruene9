@@ -653,3 +653,13 @@ main section {
          color: gray;
          text-align: center;
       }
+
+
+
+
+
+/* Fein-Layout Impressum */
+
+      .align_left {
+         align-items: start;
+      }
