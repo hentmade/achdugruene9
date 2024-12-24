@@ -257,12 +257,20 @@ main section {
 /* Fein-Layout Rückblick */
 
       .slideshow {
+         margin-top: 30px;
          margin-bottom: 30px;
          position: relative;
         /*  box-shadow: 0px 0px 10px gray; */
       }
 
       @media (orientation: landscape) {
+         .aftermovie {
+            height: 67.5vh;
+            width: 120vh;
+            margin-bottom: 30px;
+            position: relative;
+         }
+
          .slideshow {
             height: 80vh;
             width: 120vh;
@@ -273,6 +281,13 @@ main section {
          }}
 
       @media (orientation: portrait) {
+         .aftermovie {
+            height: 50.63vw;
+            width: 90vw;
+            margin-bottom: 30px;
+            position: relative;
+         }
+
          .slideshow {
             height: 60vw;
             width: 90vw;
@@ -576,7 +591,7 @@ main section {
        .info_bild {
          display: block;
          margin: 0 auto 50px auto;
-         max-height: 50vh;
+         max-height: 70vh;
          object-fit: contain;
       }
 
