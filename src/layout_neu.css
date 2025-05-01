@@ -383,6 +383,7 @@ main section {
          letter-spacing: 1px;
          color: rgb(50, 50, 50);
          text-align: center;
+         margin-bottom: 50px;
       }
 
       .line-up-uebersicht p{
