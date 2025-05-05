@@ -453,6 +453,25 @@ main section {
 
       .bandinfos p {font-size: 16px;}
 
+      .bandname {
+         display: grid;
+         grid-template-columns: auto 1fr;
+         margin-bottom: 15px;
+      }
+      .bandname h2 {margin:0;}
+      .bandname .genre {
+         margin-left: 20px;
+         margin-top: 5px;
+      }
+      .bandname .genre button {
+         background-color: var(--G9_gelb);
+         color: white;
+         border: none;
+         border-radius: 10px;
+         text-align: center;
+         padding: 5px 10px;
+      }
+
       .bandtext {
          height: 102.93px; /*calculated to reach 350px height of band_container*/
       }
@@ -471,6 +490,8 @@ main section {
             height: 91.42px; /*calculated to reach 330px height of bandinfos*/
          }
          .bandinfos p {font-size: 14px;}
+         .bandname {grid-template-columns: 1fr;}
+         .bandname .genre {margin-left: 0;}
       }
 
 
