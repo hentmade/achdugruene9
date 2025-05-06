@@ -424,10 +424,27 @@
                     <br/><b>Einlass ab 18 Jahren</b>.
                 </p>
             </div> -->
+
+            <div id="donate-button-container" style="margin:20px 0;">
+                <div id="donate-button"></div>
+                <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                <script>
+                    PayPal.Donation.Button({
+                    env:'production',
+                    hosted_button_id:'D5B2NANDUFA5L',
+                    image: {
+                    src:'https://pics.paypal.com/00/s/ZTI4ZTNjNjYtM2EwNi00N2Y2LWFiOWUtODk4NmE2NjAyM2Mx/file.PNG',
+                    alt:'Spenden mit dem PayPal-Button',
+                    title:'Unterstütze das Ach du grüne Neune! Festival',
+                    }
+                    }).render('#donate-button');
+                </script>
+            </div>
             
             <div class="tt-widget">
                 <div class="tt-widget-fallback"><p><a href="https://www.tickettailor.com/all-tickets/achdugruene9/?ref=website_widget&show_sort=true" target="_blank">Click here to buy tickets</a><br /><small><a href="https://www.tickettailor.com?rf=wdg_148971" class="tt-widget-powered">Sell tickets online with Ticket Tailor</a></small></p></div><script src="https://cdn.tickettailor.com/js/widgets/min/widget.js" data-url="https://www.tickettailor.com/all-tickets/achdugruene9/?ref=website_widget&show_sort=true" data-type="inline" data-inline-minimal="true" data-inline-show-logo="false" data-inline-bg-fill="false" data-inline-inherit-ref-from-url-param="" data-inline-ref="website_widget"></script>
             </div>
+
         </section> <!-- Ende "tickets" -->
 
 

@@ -506,6 +506,10 @@ main section {
 
 /* Fein-Layout tickets */
 
+      #donate-button {
+         height: 35px;
+      }
+
       .tickethinweis {
          background-color: var(--G9_dunkelgrün);
          color: white;
