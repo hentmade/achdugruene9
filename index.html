@@ -427,18 +427,6 @@
 
             <div id="donate-button-container" style="margin:20px 0;">
                 <div id="donate-button"></div>
-                <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-                <script>
-                    PayPal.Donation.Button({
-                    env:'production',
-                    hosted_button_id:'D5B2NANDUFA5L',
-                    image: {
-                    src:'https://pics.paypal.com/00/s/ZTI4ZTNjNjYtM2EwNi00N2Y2LWFiOWUtODk4NmE2NjAyM2Mx/file.PNG',
-                    alt:'Spenden mit dem PayPal-Button',
-                    title:'Unterstütze das Ach du grüne Neune! Festival',
-                    }
-                    }).render('#donate-button');
-                </script>
             </div>
             
             <div class="tt-widget">
@@ -746,6 +734,24 @@
 <script src="script/slideshow.js"></script>
 <script src="script/navbar.js"></script>
 <script src="script/details-elements.js"></script>
+<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.PayPal && PayPal.Donation) {
+                PayPal.Donation.Button({
+                    env: 'production',
+                    hosted_button_id: 'D5B2NANDUFA5L',
+                    image: {
+                        src: 'https://pics.paypal.com/00/s/ZTI4ZTNjNjYtM2EwNi00N2Y2LWFiOWUtODk4NmE2NjAyM2Mx/file.PNG',
+                        alt: 'Spenden mit dem PayPal-Button',
+                        title: 'Unterstütze das Ach du grüne Neune! Festival'
+                    }
+                }).render('#donate-button');
+            } else {
+                console.error('PayPal SDK not loaded.');
+            }
+        });
+    </script>
 
 
 </body>
